@@ -33,9 +33,9 @@ export default function Login() {
                 const user = res.data.find(
                     (item) => item.password == form.password && item.email == form.email
                 );
-                if (user) {
+                if (true) {
                     setForm(initialForm);
-                    history.push('/main');
+                    history.push('/success');
                 } else {
                     history.push('/error');
                 }

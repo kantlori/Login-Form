@@ -5,9 +5,8 @@ const Success = () => {
     return (
         <>
             <Alert>
-                This is a primary alert — check it out!
+                <h1>Login Successful!</h1>
             </Alert>
-            <h1>Login Successful!</h1>
         </>
     );
 };
