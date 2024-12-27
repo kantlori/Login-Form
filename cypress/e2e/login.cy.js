@@ -11,14 +11,14 @@ describe('Login Form', () => {
 
 describe('Login Form Errors', () => {
   it('should show error for invalid email', () => {
-    cy.visit('/');
+    cy.visit('http://localhost:5173');
     cy.get('input[name="email"]').type('invalid-email');
     cy.get('button').should('be.disabled');
     cy.contains('Invalid email address').should('exist');
   });
 
   it('should show multiple errors for invalid inputs', () => {
-    cy.visit('/');
+    cy.visit('http://localhost:5173');
     cy.get('input[name="email"]').type('invalid-email');
     cy.get('input[name="password"]').type('short');
     cy.contains('Invalid email address').should('exist');
